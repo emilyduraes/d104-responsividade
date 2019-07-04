@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100vw;
+}
+
+header img:nth-child(1){
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+header img:nth-child(2){
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.menu-hamburguer{
+    display: none;
+}
+
+@media(max-width: 700px){
+    nav{
+        background-color: black;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 60px;
+        transform: translateY(-200);
+        width: 100%;
+    }
+    nav.ativa{
+        transform: translateY(0);
+    }
+    nav a{
+        display: block;
+        padding: 5px 20px;
+        font-size: 2rem;
+    }
+    .menu-hamburguer{
+        display: block;
+    }
+}
+
+
